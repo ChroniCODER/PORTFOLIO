@@ -29,6 +29,8 @@ h2{
 nav ul{
 	list-style-type: none;
 	padding:0;
+  display: flex;
+
 }
    
 nav{
@@ -38,17 +40,11 @@ nav{
 }
   
 nav li{
-	float: left;
 	width: 20%;
 	text-align: center;
 }
   
-nav ul::after{
-	content: "";
-	display: table;
-	clear: both;
-}
-  
+
 nav a{
 	display: block;
 	text-decoration: none;
@@ -61,13 +57,14 @@ nav a:hover{
 	background: -webkit-linear-gradient(rgb(125, 247, 252), rgb(14, 102, 235));
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
+  
 		
 }
 .subroll{
 	display: none;
 	box-shadow: 0px 0px 2px #CCC;
 	background-color: white;
-	position: absolute;
+	position: relative;
 	width: 100%;
 	z-index: 1000;
 }
@@ -82,7 +79,6 @@ nav > ul li:hover .subroll{
 }
   
 .subroll li{
-	float: none;
 	width: 100%;
 	text-align: center;
 		
@@ -97,11 +93,12 @@ nav > ul li:hover .subroll{
 	border-bottom: none;
 }
   
-nav ul li{
-	position: relative;
-	float: left;
+nav ul li{ /* ici inserer display flex pour mise horizontale */
+	display: flex;
+  position: relative;
 	text-align: center;
 	width: 25%;
+  flex-direction: column;
 }
   
 header{
