@@ -19,32 +19,12 @@ img{
 	opacity: 50%;
 }
 
-.logo{
-	border-radius: 0%;
-	text-align: center;
-	width:50%;
-	filter: drop-shadow(15px 15px 15px rgb(73, 72, 72));
-	opacity: 100%;
+h2{
+	text-align:center;
 }
+
 
 /* Mise en place menu DEROULANT*/
-
-.name{
-	text-align: center;
-	text-shadow: 2px 2px 2px #a5a7a6;
-	font-size: 50px;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-	color: linear-gradient(rgb(15, 94, 160), rgb(5, 205, 255));
-
-}
-
-.skills{
-	text-align: center;
-	font-size: 20px;
-	margin: 0px 0px;
-	padding: 0px 0px;
-}
 
 nav ul{
 	list-style-type: none;
@@ -55,7 +35,6 @@ nav{
 	padding: 0px;
 	width: 100%;
 	margin: 0 auto;
-	
 }
   
 nav li{
@@ -106,17 +85,16 @@ nav > ul li:hover .subroll{
 	float: none;
 	width: 100%;
 	text-align: center;
-	
+		
 }
   
 .subroll a{
 	padding: 10px;
 	border-bottom: none;
 }
+
 .subroll a:hover{
 	border-bottom: none;
-	
-	
 }
   
 nav ul li{
@@ -133,3 +111,81 @@ header{
 	box-shadow: 0px 0px 2px #CCC;
 }
 /* Mise en place menu DEROULANT */
+
+/*************** GESTION FLEXBOX *******************/
+
+.intro{
+	display:flex;
+	flex-direction: column;
+	max-width: 100%;
+	min-width: 100%;
+	max-height: fit-content;
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+.name{
+	text-shadow: 2px 2px 2px #a5a7a6;
+	font-size: 50px;
+	margin-bottom: 0;
+
+}
+
+.skills{
+	font-size: 20px;
+	
+}
+
+.cover{
+	max-width: 20%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.logo{
+	width: 90%;
+	filter: drop-shadow(15px 15px 15px rgb(73, 72, 72));
+	opacity: 100%;
+}
+
+#projets{
+	display: flex;
+	background-color: pink;
+	flex-direction: column;
+	margin: 10px;
+	padding: 10px;
+}
+
+
+.projet1{
+	display: flex;
+	margin: 1%;
+	padding: 1%;
+	background-color: yellow;
+	overflow: hidden;
+	word-wrap: break-word;
+	max-width: fit-content;
+}
+
+h3{
+	justify-self: flex-end;
+	align-self: center;
+}
+
+.projets-liste {
+	display:flex;
+	flex-direction: column;
+	background-color: aqua;
+}
+
+#PJ2 .reverse {
+	order:2;
+}
+
+.projet-desc {
+	
+	background-color: red;
+	
+
+}

@@ -11,16 +11,19 @@
 	</head>
 	
 	<body>
-		<h1 class="name">Thomas Leherisse</h1>
-		<h2 class="skills"><em>Web Developer / Designer</em></h2>
+		<div class="intro">
+			<h1 class="name">Thomas Leherisse</h1>
+			<h2 class="skills"><em>Web Developer / Designer</em></h2>
+		</div>
+		
 		<header>
 			<nav class="menu">  <!-- debut de la section bouton de navigation-->
 				<ul>
 				  <li class="roll"><a href="#projets" title="lien vers la section projets">- MY PROJECTS... -</a>
 					<ul class="subroll">
-					  <li><a href="#PJ1" title="lien vers le projet 1">PROJET 1</a></li>
-					  <li><a href="#PJ2" title="lien vers le projet 2">PROJET 2</a></li>
-					  <li><a href="#PJ3" title="lien vers le projet 3">PROJET 3</a></li>
+					  <li><a href="#PJ1" title="lien vers le projet 1">PROJECT 1</a></li>
+					  <li><a href="#PJ2" title="lien vers le projet 2">PROJECT 2</a></li>
+					  <li><a href="#PJ3" title="lien vers le projet 3">PROJECT 3</a></li>
 					</ul>
 				  </li>
 				  <li class="roll"><a href="#etudes" title="lien vers lla section etudes">- ABOUT ME... -</a>
@@ -42,37 +45,68 @@
 		</header>
 
 		<section class="cover"> <!-- debut de la section couverture avec nom et photo-->
-			<img class="logo" src="images/chronicoder_logo.jpg" alt="photo donkeyschool"/>
+			<img class="logo" src="images/chronicoder_logo.png" alt="photo donkeyschool"/>
 		</section>      <!-- fin de la section couverture avec nom et photo-->
 				
 		<main>
 			<section id="projets">   <!-- debut de la section project -->    
-				<h2>PROJETS REALISES</h2>
+				<h2>MY PROJECTS...</h2>
+				
+				<div class="projets-liste">
+					<article class="projet1" id="PJ1">
+						<div>
+							<img src="https://via.placeholder.com/150" alt="photo de mon projet 1">
+						</div>
+						<div class="projet-desc">
+							<h3>Project 1</h3>
+							<p>Lorem ipsum dolor nseclectustortor, dignissim sit Lorem ipolor sit amet, consectetur adipiscing eliton risus. Suspendisse lectustortor, dignissim sit Lorem ipsum dolor smet, consectetur adipiscing elit. Sed non risus. Ssse lectustortor, dignissim sitLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectustortor, d sitn risus. Suspendisse lectustortor, dignissim sit</p>
+						</div>
+					</article>
 
-				<article class="projet1" id="PJ1">
-					<img src="https://via.placeholder.com/150" alt="photo de mon projet 1">
-					<h3>Projet 1</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectustortor, dignissim sit</p>
-					<button class="deploy">En savoir plus</button>
-				</article>
+					<article class="projet1" id="PJ2">
+						<div class="reverse">
+							<img src="https://via.placeholder.com/150"alt="photo de mon projet 2">
+						</div>
+						<div class="projet-desc">
+							<h3>Project 2</h3>
+							<p>Lorem ipsum dolor nseclectustortor, dignissim sit Lorem ipolor sit amet, consectetur adipiscing eliton risus. Suspendisse lectustortor, dignissim sit Lorem ipsum dolor smet, consectetur adipiscing elit. Sed non risus. Ssse lectustortor, dignissim sitLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectustortor, d sitn risus. Suspendisse lectustortor, dignissim sit</p>
+							
+						</div>
+					</article>
 
-				<article class="projet2" id="PJ2">
-					<img src="https://via.placeholder.com/150"alt="photo de mon projet 2">
-					<h3>Projet 2</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectustortor, dignissim sit</p>
-					<button class="deploy">En savoir plus</button>
-				</article>
-
-				<article class="projet3" id="PJ3">
-					<img src="https://via.placeholder.com/150" alt="photo de mon projet 3">
-					<h3>Projet 3</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectustortor, dignissim sit</p>
-					<button class="deploy">En savoir plus</button>
-				</article>
+					<article class="projet1" id="PJ3">
+						
+						<div>
+							<img src="https://via.placeholder.com/150" alt="photo de mon projet 3">
+						</div>
+						<div class="projet-desc">
+							<h3>Project 3</h3>
+							<p>Lorem ipsum dolor nseclectustortor, dignissim sit Lorem ipolor sit amet, consectetur adipiscing eliton risus. Suspendisse lectustortor, dignissim sit Lorem ipsum dolor smet, consectetur adipiscing elit. Sed non risus. Ssse lectustortor, dignissim sitLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectustortor, d sitn risus. Suspendisse lectustortor, dignissim sit</p>
+						</div>
+					</article>	
+				</div>
 			</section> <!-- fin de la section project -->
 			
+			<section id="articles">   <!-- debut de la section articles -->    
+				<h2>MY ARTWORKS...</h2>
+
+				<aside class="article1" id="AR1">
+					<img src="https://via.placeholder.com/250x150" alt="photo de mon article 1">
+					<h3>article 1</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectustortor, dignissim sit</p>
+					
+				</aside>
+
+				<aside class="article2" id="AR2">
+					<img src="https://via.placeholder.com/250x150" alt="photo de mon article 2">
+					<h3>article 2</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectustortor, dignissim sit</p>
+					
+				</aside>
+			</section> <!-- fin de la section articles -->
+			
 			<section id="etudes">   <!-- debut de la section etudes -->    
-				<h2>ETUDES</h2>
+				<h2>MY STUDIES...</h2>
 
 				<div class="profil">
 					<img src="https://via.placeholder.com/150" alt="photo de thomas leherisse">
@@ -92,28 +126,8 @@
 							<li><h4>date 4</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspend</p></li>
 						</ul>
 					</div>
+
 			</section> <!-- fin de la section etudes -->    
-
-			<section id="articles">   <!-- debut de la section articles -->    
-				<h2>ARTICLES</h2>
-
-				<aside class="article1" id="AR1">
-					<img src="https://via.placeholder.com/250x150" alt="photo de mon article 1">
-					<h3>article 1</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectustortor, dignissim sit</p>
-					<button class="deploy">En savoir plus</button>
-					<button class="comment">Commentaires</button>
-				</aside>
-
-				<aside class="article2" id="AR2">
-					<img src="https://via.placeholder.com/250x150" alt="photo de mon article 2">
-					<h3>article 2</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectustortor, dignissim sit</p>
-					<button class="deploy">En savoir plus</button>
-					<button class="comment">Commentaires</button>
-				</aside>
-			</section> <!-- fin de la section articles -->
-			
 			<section id="contact">    <!-- debut de la section contact -->
 				<h2>CONTACT</h2>
 				<form action="mon-formulaire-de-contact" method="post">
