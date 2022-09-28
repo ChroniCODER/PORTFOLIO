@@ -53,7 +53,7 @@
 				</svg>
 			</div>
 		</div> <!--fin de la section scrolldown picto-->	
-		
+
 		<section class="cover"> <!-- debut de la section couverture avec nom et photo-->
 			<div>
 				<img class="logo" src="images/chronicoder_logo.png" alt="photo donkeyschool"/>
@@ -71,7 +71,7 @@
 							<img src="https://via.placeholder.com/150" alt="photo de mon projet 1">
 						</div>
 						<div class="projet-desc">
-							<h3>Project 1</h3>
+							<h3 class="projet-title">Project 1</h3>
 							<p>Lorem ipsum dolor nseclectustortor, dignissim sit Lorem ipolor sit amet, consectetur adipiscing eliton risus. Suspendisse lectustortor, dignissim sit Lorem ipsum dolor smet, consectetur adipiscing elit. Sed non risus. Ssse lectustortor, dignissim sitLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectustortor, d sitn risus. Suspendisse lectustortor, dignissim sit</p>
 						</div>
 					</article>
@@ -81,14 +81,13 @@
 							<img src="https://via.placeholder.com/150"alt="photo de mon projet 2">
 						</div>
 						<div class="projet-desc">
-							<h3>Project 2</h3>
+							<h3 class="projet-title">Project 2</h3>
 							<p>Lorem ipsum dolor nseclectustortor, dignissim sit Lorem ipolor sit amet, consectetur adipiscing eliton risus. Suspendisse lectustortor, dignissim sit Lorem ipsum dolor smet, consectetur adipiscing elit. Sed non risus. Ssse lectustortor, dignissim sitLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectustortor, d sitn risus. Suspendisse lectustortor, dignissim sit</p>
 							
 						</div>
 					</article>
 
 					<article class="projet1" id="PJ3">
-						
 						<div>
 							<img src="https://via.placeholder.com/150" alt="photo de mon projet 3">
 						</div>
@@ -100,8 +99,55 @@
 				</div>
 			</section> <!-- fin de la section project -->
 			
-			<section id="articles">   <!-- debut de la section articles -->    
+			<section id="articles">   <!-- debut de la section artworks -->    
 				<h2>MY ARTWORKS...</h2>
+				<area class="slider">
+					<div id="frame">		<!-- code du carroussel/slider HTML CSS -->
+						<input type="radio" name="frame" id="frame1" checked />
+						<input type="radio" name="frame" id="frame2" />
+						<input type="radio" name="frame" id="frame3" />
+						<input type="radio" name="frame" id="frame4" />
+						<div id="slides">
+							<div id="overflow">
+								<div class="inner">
+									<div class="frame frame_1">
+										<div class="frame-content">
+											<!--<h2>Slide 1</h2>-->
+											<a target="_blank" href= "images/chronicover_couv.png"><img src="images/mini/chronicover_couv_mini.png" alt= "logo de ma chaine youtube chronicover">
+										</div>
+									</div>
+									<div class="frame frame_2">
+										<div class="frame-content">
+											<h2>Slide 2</h2>
+										</div>
+									</div>
+									<div class="frame frame_3">
+										<div class="frame-content">
+											<h2>Slide 3</h2>
+										</div>
+									</div>
+									<div class="frame frame_4">
+										<div class="frame-content">
+											<h2>Slide 4</h2>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="controls">
+							<label for="frame1"></label>
+							<label for="frame2"></label>
+							<label for="frame3"></label>
+							<label for="frame4"></label>
+						</div>
+						<div id="bullets">
+							<label for="frame1"></label>
+							<label for="frame2"></label>
+							<label for="frame3"></label>
+							<label for="frame4"></label>
+						</div>
+					</div>			
+				</area><!-- fin code du carroussel/slider HTML CSS -->
 
 				<aside class="article1" id="AR1">
 					<img src="https://via.placeholder.com/250x150" alt="photo de mon article 1">

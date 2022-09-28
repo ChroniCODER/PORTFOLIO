@@ -13,17 +13,15 @@ body{
 	display: flex;
 	flex-direction: row;
 	justify-content:space-between;
-	background-color: red;
+	
 }
 
 .cover_p{
 	font-size: 4em;
 	margin: 1%;
 	padding: 1%;
-	background-color: aqua;
 	width: 60%;
 	text-align: justify;
-
 }
 
 .logo{
@@ -33,8 +31,6 @@ body{
 	position:relative;
 	margin: 1%;
 	padding: 1%;
-	
-
 }
 
 /* Scroll Down
@@ -146,21 +142,23 @@ nav a:hover{
 		
 }
 .subroll{
-	display: none;
 	box-shadow: 0px 0px 2px #CCC;
 	background-color: white;
 	position: relative;
 	width: 100%;
 	z-index: 1000;
+	visibility:hidden;
+	display:flex;
+	flex-direction:column;
 }
   
 .roll{
-	background: linear-gradient(rgb(255, 255, 255), rgb(190, 190, 190));
+	background-color: white;
 	box-shadow: 0px 0px 2px #CCC;
 	
 }
 nav > ul li:hover .subroll{
-	display: block;
+	visibility: visible;
 }
   
 .subroll li{
@@ -190,7 +188,7 @@ header{
 	position: sticky;
 	top: 0px;
 	z-index: 1000;
-	box-shadow: 0px 0px 2px #CCC;
+	
 }
 /* Mise en place menu DEROULANT */
 
@@ -216,14 +214,16 @@ header{
 	font-size: 20px;
 }
 
-
+.projet-title{
+	padding-bottom: 1%;
+}
 
 #projets{
 	display: flex;
 	background-color: pink;
 	flex-direction: column;
-	margin: 10px;
-	padding: 10px;
+	margin: 1%;
+	padding: 1%;
 }
 
 
@@ -232,14 +232,16 @@ header{
 	margin: 1%;
 	padding: 1%;
 	background-color: yellow;
-	overflow: hidden;
-	word-wrap: break-word;
-	max-width: fit-content;
 }
 
 h3{
-	justify-self: flex-end;
-	align-self: center;
+	margin: 0;
+	padding:0;
+}
+
+p{
+	margin: 0%;
+	padding: 0%;
 }
 
 .projets-liste {
@@ -257,6 +259,167 @@ h3{
 	background-color: red;
 	margin: 1%;
 	padding: 1%;
-	
+}
 
+
+
+/***** CSS SLIDER ARTWORKS CSS***/
+
+#frame {
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+}
+  
+#frame input[type=radio] {
+    display: none;
+}
+  
+#frame label {
+    cursor: pointer;
+    text-decoration: none;
+}
+  
+#slides {
+    padding: 10px;
+    border: 5px solid rgb(76, 78, 76);
+    background: rgb(197, 197, 199);
+    position: relative;
+    z-index: 1;
+}
+  
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+  
+#frame1:checked~#slides .inner {
+    margin-left: 0;
+}
+  
+#frame2:checked~#slides .inner {
+    margin-left: -100%;
+}
+  
+#frame3:checked~#slides .inner {
+    margin-left: -200%;
+}
+  
+#frame4:checked~#slides .inner {
+    margin-left: -300%;
+}
+  
+#slides .inner {
+    transition: margin-left 800ms 
+        cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 300px;
+}
+  
+#slides .frame {
+    width: 25%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #FFF;
+}
+  
+#slides .frame_1 {
+    background: #90C;
+}
+  
+#slides .frame_2 {
+    background: #F90;
+}
+  
+#slides .frame_3 {
+    background: #606;
+}
+  
+#slides .frame_4 {
+    background: #C00;
+}
+  
+#controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
+  
+#controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+}
+  
+#controls label:hover {
+    opacity: 1;
+}
+  
+#frame1:checked~#controls label:nth-child(2),
+#frame2:checked~#controls label:nth-child(3),
+#frame3:checked~#controls label:nth-child(4),
+#frame4:checked~#controls label:nth-child(1) {
+    background: 
+url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+    float: right;
+    margin: 0 -50px 0 0;
+    display: block;
+}
+  
+#frame1:checked~#controls label:nth-last-child(2),
+#frame2:checked~#controls label:nth-last-child(3),
+#frame3:checked~#controls label:nth-last-child(4),
+#frame4:checked~#controls label:nth-last-child(1) {
+    background: 
+url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+    float: left;
+    margin: 0 0 0 -50px;
+    display: block;
+}
+  
+#bullets {
+    margin: 150px 0 0;
+    text-align: center;
+}
+  
+#bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ccc;
+    margin: 0 10px;
+}
+  
+#frame1:checked~#bullets label:nth-child(1),
+#frame2:checked~#bullets label:nth-child(2),
+#frame3:checked~#bullets label:nth-child(3),
+#frame4:checked~#bullets label:nth-child(4) {
+    background: #444;
+}
+  
+@media screen and (max-width: 900px) {
+    #frame1:checked~#controls label:nth-child(2),
+    #frame2:checked~#controls label:nth-child(3),
+    #frame3:checked~#controls label:nth-child(4),
+    #frame4:checked~#controls label:nth-child(1),
+    #frame1:checked~#controls label:nth-last-child(2),
+    #frame2:checked~#controls label:nth-last-child(3),
+    #frame3:checked~#controls label:nth-last-child(4),
+    #frame4:checked~#controls label:nth-last-child(1) {
+        margin: 0;
+    }
+    #slides {
+        max-width: calc(100% - 140px);
+        margin: 0 auto;
+    }
 }
