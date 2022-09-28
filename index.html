@@ -19,26 +19,26 @@
 		<header>
 			<nav class="menu">  <!-- debut de la section bouton de navigation-->
 				<ul>
-				  <li class="roll"><a href="#projets" title="lien vers la section projets">- MY PROJECTS... -</a>
+				  <li class="roll"><a class="roll_menu" href="#projets" title="lien vers la section projets">- MY PROJECTS... -</a>
 					<ul class="subroll">
 					  <li><a href="#PJ1" title="lien vers le projet 1">PROJECT 1</a></li>
 					  <li><a href="#PJ2" title="lien vers le projet 2">PROJECT 2</a></li>
 					  <li><a href="#PJ3" title="lien vers le projet 3">PROJECT 3</a></li>
 					</ul>
 				  </li>
-				  <li class="roll"><a href="#etudes" title="lien vers lla section etudes">- ABOUT ME... -</a>
+				  <li class="roll"><a class="roll_menu" href="#etudes" title="lien vers lla section etudes">- ABOUT ME... -</a>
 					<ul class="subroll">
 					  <li><a href="#CV1" title="lien vers mes infos personnelles">About me...</a></li>
 					  <li><a href="#CV2" title="lien vers mon parcours scolaire et pro">My studies</a></li>
 					</ul>
 				  </li>
-				  <li class="roll"><a href="#artworks" title="lien vers la section artworks">- ARTWORKS -</a>
+				  <li class="roll"><a class="roll_menu" href="#artworks" title="lien vers la section artworks">- ARTWORKS -</a>
 					<ul class="subroll">
 					  <li><a href="#AR1" title="lien vers l'artwork 1">ARTWORK 1</a></li>
 					  <li><a href="#AR2" title="lien vers l'artwork 2">ARTWORK 2</a></li>
 					</ul>
 				  </li>
-				  <li class="roll"><a href="#contact" title="lien vers la section contact">- CONTACT ME -</a></li>
+				  <li class="roll"><a class="roll_menu" href="#contact" title="lien vers la section contact">- CONTACT ME -</a></li>
 			  </ul>
 			</nav>              <!-- fin de la section boutons de navigation-->
 
@@ -68,7 +68,7 @@
 				<div class="projets-liste">
 					<article class="projet1" id="PJ1">
 						<div>
-							<img src="https://via.placeholder.com/150" alt="photo de mon projet 1">
+							<img class="gradient-border" src="https://via.placeholder.com/250x150" alt="photo de mon projet 1">
 						</div>
 						<div class="projet-desc">
 							<h3 class="projet-title">Project 1</h3>
@@ -78,7 +78,7 @@
 
 					<article class="projet1" id="PJ2">
 						<div class="reverse">
-							<img src="https://via.placeholder.com/150"alt="photo de mon projet 2">
+							<img class="gradient-border" src="https://via.placeholder.com/250x150"alt="photo de mon projet 2">
 						</div>
 						<div class="projet-desc">
 							<h3 class="projet-title">Project 2</h3>
@@ -89,7 +89,7 @@
 
 					<article class="projet1" id="PJ3">
 						<div>
-							<img src="https://via.placeholder.com/150" alt="photo de mon projet 3">
+							<img class="gradient-border" src="https://via.placeholder.com/250x150" alt="photo de mon projet 3">
 						</div>
 						<div class="projet-desc">
 							<h3>Project 3</h3>
@@ -100,8 +100,10 @@
 			</section> <!-- fin de la section project -->
 			
 			<section id="articles">   <!-- debut de la section artworks -->    
+				
 				<h2>MY ARTWORKS...</h2>
-				<area class="slider">
+				
+				<section class="slider">
 					<div id="frame">		<!-- code du carroussel/slider HTML CSS -->
 						<input type="radio" name="frame" id="frame1" checked />
 						<input type="radio" name="frame" id="frame2" />
@@ -113,7 +115,7 @@
 									<div class="frame frame_1">
 										<div class="frame-content">
 											<!--<h2>Slide 1</h2>-->
-											<a target="_blank" href= "images/chronicover_couv.png"><img src="images/mini/chronicover_couv_mini.png" alt= "logo de ma chaine youtube chronicover">
+											<a target="_blank" href= "images/chronicover_couv.png"><img src="images/mini/chronicover_couv_mini.png" alt= "logo de ma chaine youtube chronicover"></a>
 										</div>
 									</div>
 									<div class="frame frame_2">
@@ -147,7 +149,7 @@
 							<label for="frame4"></label>
 						</div>
 					</div>			
-				</area><!-- fin code du carroussel/slider HTML CSS -->
+				</section><!-- fin code du carroussel/slider HTML CSS -->
 
 				<aside class="article1" id="AR1">
 					<img src="https://via.placeholder.com/250x150" alt="photo de mon article 1">
