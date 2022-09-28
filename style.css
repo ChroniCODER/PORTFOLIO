@@ -1,10 +1,95 @@
 
-/* images opacity hover and border CHALLENGE 3*/
-
-
+/*dark mode features START*******/
 body{
-	background: linear-gradient(rgb(253, 253, 253), rgb(95, 94, 94));
+	background-color: black;
 }
+
+*{
+	color:antiquewhite
+}
+
+/*section cover logo et intro*/
+.cover{
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	background-color: red;
+}
+
+.cover_p{
+	font-size: 4em;
+	margin: 1%;
+	padding: 1%;
+	background-color: aqua;
+	width: 60%;
+	text-align: justify;
+
+}
+
+.logo{
+	width: 100%;
+	filter: drop-shadow(15px 15px 15px rgb(73, 72, 72));
+	opacity: 100%;
+	position:relative;
+	margin: 1%;
+	padding: 1%;
+	
+
+}
+
+/* Scroll Down
+If you want to adjust the positioning of the icon, simply edit the 
+.scrolldown-wrapper class and adjust the bottom position 
+(e.g. changing bottom: 10%; will move the icon 10% of the viewport height from the bottom).
+
+You can also adjust the speed of the animation by 
+adjusting either .scrolldown-p1 or .scrolldown-p2 classes.*/
+
+.scrolldown-wrapper {
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	transform: translate(-50%, -50%);
+}
+  
+.scrolldown {
+	border: 2px solid #FFFFFF;
+	border-radius: 30px;
+	height: 46px;
+	margin: 0 auto 8px;
+	text-align: center;
+	width: 30px;
+}
+
+.scrolldown-p1,
+.scrolldown-p2 {
+	animation-duration: 1.5s;
+	animation-name: scrolldown;
+	animation-iteration-count: infinite;
+	fill: #FFFFFF;
+}
+  
+.scrolldown-p2 {
+	animation-delay: .75s;
+}
+
+@keyframes scrolldown {
+	0% {
+		opacity: 0;
+		transform: translate(0, -8px);
+	}
+	50% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(0, 8px);
+	}
+}
+
+/*dark mode feature END*******/
 
 img:hover{
 	opacity: 100%;
@@ -29,7 +114,7 @@ h2{
 nav ul{
 	list-style-type: none;
 	padding:0;
-  display: flex;
+  	display: flex;
 
 }
    
@@ -95,10 +180,10 @@ nav > ul li:hover .subroll{
   
 nav ul li{ /* ici inserer display flex pour mise horizontale */
 	display: flex;
-  position: relative;
+  	position: relative;
 	text-align: center;
 	width: 25%;
-  flex-direction: column;
+  	flex-direction: column;
 }
   
 header{
@@ -109,7 +194,7 @@ header{
 }
 /* Mise en place menu DEROULANT */
 
-/*************** GESTION FLEXBOX *******************/
+/*************** GESTION FLEXBOX SECTION PROJECTS *******************/
 
 .intro{
 	display:flex;
@@ -119,32 +204,19 @@ header{
 	max-height: fit-content;
 	align-items: center;
 	justify-content: space-around;
-
 }
 
 .name{
 	text-shadow: 2px 2px 2px #a5a7a6;
 	font-size: 50px;
 	margin-bottom: 0;
-
 }
 
 .skills{
 	font-size: 20px;
-	
 }
 
-.cover{
-	max-width: 20%;
-	margin-right: auto;
-	margin-left: auto;
-}
 
-.logo{
-	width: 90%;
-	filter: drop-shadow(15px 15px 15px rgb(73, 72, 72));
-	opacity: 100%;
-}
 
 #projets{
 	display: flex;
@@ -183,6 +255,8 @@ h3{
 .projet-desc {
 	
 	background-color: red;
+	margin: 1%;
+	padding: 1%;
 	
 
 }
