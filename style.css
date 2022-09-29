@@ -1,6 +1,13 @@
 html{
 	scroll-behavior: smooth;
 }
+
+h1, h2, h3{
+	background: -webkit-linear-gradient(rgb(125, 247, 252), rgb(14, 102, 235));
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
 /*dark mode features START*******/
 body{
 	background-color: black;
@@ -15,8 +22,8 @@ body{
 
 h1{
 	margin-top:0;
-
 }
+
 .cover{
 	display: flex;
 	flex-direction: row;
@@ -24,11 +31,15 @@ h1{
 }
 
 .cover_p{
-	font-size: 4em;
+	font-size: 5rem;
 	margin: 1%;
 	padding: 1%;
 	width: 60%;
 	text-align: justify;
+
+	background: -webkit-linear-gradient(rgb(125, 247, 252), rgb(14, 102, 235));
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 
 .logo{
@@ -108,7 +119,7 @@ adjusting either .scrolldown-p1 or .scrolldown-p2 classes.*/
 
 img:hover{
 	opacity: 100%;
-	box-shadow: 10px 5px 5px rgb(205, 204, 204);
+	box-shadow: 5px 5px 5px rgb(205, 204, 204);
 }
 
 .logo:hover {
@@ -117,7 +128,6 @@ img:hover{
 
 img{
 	border-radius: 5px;
-	opacity: 50%;
 }
 
 h2{
@@ -131,7 +141,6 @@ nav ul{
 	list-style-type: none;
 	padding:0;
   	display: flex;
-
 }
    
 nav{
@@ -144,21 +153,19 @@ nav li{
 	width: 20%;
 	text-align: center;
 }
-  
+
+nav a:hover{
+	color: rgb(115, 63, 238);
+}
 
 nav a{
 	display: block;
 	text-decoration: none;
 	color: black;
 	padding: 10px 0px;
+	background-color: white;
 }
   
-nav a:hover{
-	background: -webkit-linear-gradient(rgb(125, 247, 252), rgb(14, 102, 235));
-  	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-}
-
 .subroll{
 	box-shadow: 0px 0px 2px #CCC;
 	background-color: white;
@@ -188,15 +195,6 @@ nav > ul li:hover .subroll{
 	text-align: center;
 }
   
-.subroll a{
-	padding: 10px;
-	border-bottom: none;
-}
-
-.subroll a:hover{
-	border-bottom: none;
-}
-  
 nav ul li{
 	display: flex;
   	position: relative;
@@ -211,6 +209,8 @@ header{
 	z-index: 1000;
 	margin-bottom: 0;
 	margin-top: 0;
+	
+
 }
 /* Mise en place menu DEROULANT */
 
@@ -227,7 +227,7 @@ header{
 }
 
 .name{
-	text-shadow: 2px 2px 2px #a5a7a6;
+	
 	font-size: 50px;
 	margin-bottom: 0;
 }
@@ -450,4 +450,45 @@ url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
         max-width: calc(100% - 140px);
         margin: 0 auto;
     }
+}
+
+/* ajout perso au slider*/
+
+.mini_art:hover{
+	box-shadow: none;
+}
+
+/****** mise en place FLEXBOX studies ******/
+
+#etudes{
+	background-color: #629eb6;
+}
+
+.profil{
+	display:flex;
+	flex-direction: column;
+	background-color: #F90;
+	width: fit-content;
+	padding: 1%;
+	margin: 1%;
+}
+
+.photo_cv{
+	margin: 1%;
+	background-color: #606;
+	width: fit-content;
+}
+
+.infos{
+	display:flex;
+	flex-direction: column;
+	background-color: red;
+	width: fit-content;
+	margin: 1%;
+	padding: 1%;
+}
+
+.curriculum{
+	background-color: green;
+	width: fit-content;
 }

@@ -26,9 +26,10 @@
 					  <li><a href="#PJ3" title="lien vers le projet 3">PROJECT 3</a></li>
 					</ul>
 				  </li>
-				  <li class="roll"><a class="roll_menu" href="#etudes" title="lien vers lla section etudes">- ABOUT ME... -</a>
+				  <li class="roll"><a class="roll_menu" href="#etudes" title="lien vers la section etudes">- ABOUT ME... -</a>
 					<ul class="subroll">
 					  <li><a href="#CV1" title="lien vers mes infos personnelles">About me...</a></li>
+					  <li><a href="#CV2" title="lien vers mon parcours scolaire et pro">Soft skills</a></li>
 					  <li><a href="#CV2" title="lien vers mon parcours scolaire et pro">My studies</a></li>
 					</ul>
 				  </li>
@@ -42,7 +43,6 @@
 			  </ul>
 			</nav>              <!-- fin de la section boutons de navigation-->
 
-			
 		</header>
 
 		<div class="scrolldown-wrapper">  <!--debut de la section scrolldown picto-->
@@ -115,7 +115,7 @@
 									<div class="frame frame_1">
 										<div class="frame-content">
 											<!--<h2>Slide 1</h2>-->
-											<a target="_blank" href= "images/chronicover_couv.png"><img src="images/mini/chronicover_couv_mini.png" alt= "logo de ma chaine youtube chronicover"></a>
+											<a class="mini_art" target="_blank" href= "images/chronicover_couv.png"><img class="mini_art" src="images/mini/chronicover_couv_mini.png" title="Mon logo créé pour ma chaine youtube" alt= "logo de ma chaine youtube chronicover"></a>
 										</div>
 									</div>
 									<div class="frame frame_2">
@@ -151,35 +151,64 @@
 					</div>			
 				</section><!-- fin code du carroussel/slider HTML CSS -->
 
-				<aside class="article1" id="AR1">
-					<img src="https://via.placeholder.com/250x150" alt="photo de mon article 1">
-					<h3>article 1</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectustortor, dignissim sit</p>
-					
-				</aside>
+				<h2>MY SOFT SKILLS...</h2>
 
-				<aside class="article2" id="AR2">
-					<img src="https://via.placeholder.com/250x150" alt="photo de mon article 2">
-					<h3>article 2</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectustortor, dignissim sit</p>
-					
-				</aside>
-			</section> <!-- fin de la section articles -->
+				<div class="projets-liste">
+					<article class="projet1" id="PJ1">
+						<div>
+							<a target="_blank" href="https://www.youtube.com/channel/UCAq_TOK691We6aAxxDlBV0g"><img class="gradient-border" src="images/mini/chronicover_link.png" alt="photo de ma chaine youtube chronicover"></a>
+						</div>
+						<div class="projet-desc">
+							<h3 class="projet-title">My Youtube Channel</h3>
+							<p>ChroniCover is my Youtube channel, created originaly to promote my music through some video content like chronic, review and classic cover. A great project to develop a lot of skill quickly in many aspect, design, writing, video editing, daw software etc...</p>
+						</div>
+					</article>
+
+					<article class="projet1" id="PJ2">
+						<div class="reverse">
+							<img class="gradient-border" src="https://via.placeholder.com/250x150"alt="photo de mon projet 2">
+						</div>
+						<div class="projet-desc">
+							<h3 class="projet-title">Project 2</h3>
+							<p>Lorem ipsum dolor nseclectustortor, dignissim sit Lorem ipolor sit amet, consectetur adipiscing eliton risus. Suspendisse lectustortor, dignissim sit Lorem ipsum dolor smet, consectetur adipiscing elit. Sed non risus. Ssse lectustortor, dignissim sitLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectustortor, d sitn risus. Suspendisse lectustortor, dignissim sit</p>
+							
+						</div>
+					</article>
+
+					<article class="projet1" id="PJ3">
+						<div>
+							<img class="gradient-border" src="https://via.placeholder.com/250x150" alt="photo de mon projet 3">
+						</div>
+						<div class="projet-desc">
+							<h3>Project 3</h3>
+							<p>Lorem ipsum dolor nseclectustortor, dignissim sit Lorem ipolor sit amet, consectetur adipiscing eliton risus. Suspendisse lectustortor, dignissim sit Lorem ipsum dolor smet, consectetur adipiscing elit. Sed non risus. Ssse lectustortor, dignissim sitLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectustortor, d sitn risus. Suspendisse lectustortor, dignissim sit</p>
+						</div>
+					</article>	
+				</div>
+				
+			</section> <!-- fin de la section artworks -->
 			
-			<section id="etudes">   <!-- debut de la section etudes -->    
-				<h2>MY STUDIES...</h2>
+			<h2>MY STUDIES...</h2>
 
-				<div class="profil">
-					<img src="https://via.placeholder.com/150" alt="photo de thomas leherisse">
-					<div class="infos" id="CV1">
-						<ul>
-							<li>Nom</li>
-							<li>Prenom</li>
-							<li>Age</li>
-							<li>adresse mail / telephone</li>
-						</ul>
+			<section id="etudes">   <!-- debut de la section etudes -->    <!--bleu-->
+				
+				<div>
+					<div class="profil">										<!--orange-->
+						<div class="photo_cv">									<!--violet-->
+							<img src="https://via.placeholder.com/150" alt="photo de thomas leherisse">
+						</div>
+						<div class="infos" id="CV1">							<!--red-->
+							<div>
+								<ul>
+								<li>LEHERISSE</li>
+								<li>Thomas</li>
+								<li>40 ans</li>
+								<li><a href="#contact">CONTACT ME</a></li>
+							</ul>
+						</div>
 					</div>
-					<div class="curriculum" id="CV2">
+				</div>
+					<div class="curriculum" id="CV2">						<!--VERT-->
 						<ul>
 							<li><h4>date 1</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspend</p></li>
 							<li><h4>date 2</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspend</p></li>
@@ -189,6 +218,7 @@
 					</div>
 
 			</section> <!-- fin de la section etudes -->    
+			
 			<section id="contact">    <!-- debut de la section contact -->
 				<h2>CONTACT</h2>
 				<form action="mon-formulaire-de-contact" method="post">
